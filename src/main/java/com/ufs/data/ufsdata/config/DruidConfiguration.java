@@ -27,7 +27,7 @@ public class DruidConfiguration {
     }
 
     @Bean
-    public FilterRegistrationBean statFilter(){
+    public FilterRegistrationBean startFilter(){
         //创建过滤器
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
         //设置过滤器过滤路径

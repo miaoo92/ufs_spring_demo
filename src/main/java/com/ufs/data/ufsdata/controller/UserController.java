@@ -30,4 +30,9 @@ public class UserController {
         int insert = userMapper.insert(user);
         return ResponseEntity.ok(user);
     }
+
+    @RequestMapping("/json")
+    public String json() throws Exception {
+        throw new Exception("发⽣错误");
+    }
 }
